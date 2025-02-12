@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+	android:padding="4dp"
+	android:orientation="vertical"
+	android:background="#303030"
+    tools:context=".MainActivity">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:layout_margin="4dp"
+		android:orientation="vertical"
+		android:background="@drawable/bck_visor"
+		android:layout_weight="1.5" >
+		<LinearLayout
+			android:id="@+id/lopr"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight=".15"
+			android:gravity="end|center_vertical"
+			android:background="@drawable/bck_tx_op" >
+			<TextView
+				android:id="@+id/txopr1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:fontFamily="@font/Calculator"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/txoprs"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:fontFamily="@font/Calculator"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/txopr2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:fontFamily="@font/Calculator"
+				android:textSize="15sp"
+				android:textStyle="bold" />	
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="bottom"
+			android:paddingEnd="10dp"
+			android:paddingStart="10dp"
+			android:paddingBottom="10dp"
+			android:paddingTop="4dp"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/txsignal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="start|bottom"
+				android:fontFamily="@font/Calculator"
+				android:hint="#"
+				android:visibility="gone"
+				android:textSize="30sp"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/txnum"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:maxLines="7"
+				android:layout_weight="1"
+				android:gravity="end|bottom"
+				android:fontFamily="@font/Calculator"
+				android:hint="0"
+				android:selectAllOnFocus="true"
+				android:textSize="30sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight=".8" >
+    	<Button
+			android:id="@+id/txclear"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_op"
+			android:fontFamily="@font/Orbitron-Bold"
+	        android:text="C"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txdel"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_op"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="CE"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txpercent"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_op"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="%"
+			android:textAlignment="center"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txdivision"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_op"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="/"
+			android:layout_gravity="center"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight=".8" >
+    	<Button
+			android:id="@+id/txone"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+	        android:text="1"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txtwo"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="2"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txthree"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="3"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txmultiply"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_op"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="*"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />	
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight=".8" >
+    	<Button
+			android:id="@+id/txfour"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+	        android:text="4"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txfive"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="5"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txsix"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="6"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txsubtraction"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_op"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="-"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />	
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight=".8" >
+    	<Button
+			android:id="@+id/txseven"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+	        android:text="7"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txeight"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="8"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txnine"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="9"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txaddition"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_op"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="+"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />	
+	</LinearLayout> 
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_weight=".8" >
+    	<Button
+			android:id="@+id/txdot"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+	        android:text="."
+			android:textAlignment="center"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txzero"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="0"
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txcomma"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_num"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text=","
+			android:textSize="20sp"
+			android:textColor="#bdff00" />
+		<Button
+			android:id="@+id/txequal"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:layout_margin="2dp"
+			android:layout_weight="1"
+			android:background="@drawable/btn_res"
+			android:fontFamily="@font/Orbitron-Bold"
+  	      android:text="="
+			android:textSize="20sp"
+			android:textColor="#bdff00" />	
+	</LinearLayout>
+</LinearLayout>
